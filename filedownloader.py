@@ -1,6 +1,15 @@
-import requests
 import os
+import requests
 
+
+"""
+URL = "https://www.google.com/"
+FILE = "localpage_google"
+>>> downloader(URL, FILE)
+>>> True # if file uploaded successfully
+>>> False # All attempts have failed and the file has not been uploaded
+
+"""
 
 def downloader(url, file, attempt=1):
     """Wrap for multiple attempts"""
